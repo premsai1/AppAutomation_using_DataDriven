@@ -1,0 +1,14 @@
+url = http://localhost:8080/LoginApp/login.jsp
+
+username =p123
+password=1234
+
+browser = chrome
+
+
+firstName=prem
+userName=p093
+password=1234
+address=kkkk
+contact=88686868
+mail=mail1@g.c

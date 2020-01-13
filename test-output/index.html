@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites">
+              <span class="suite-name border-failed">APP Automation Test Automation Test Suites</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-APP_Automation_Test_Automation_Test_Suites">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-APP_Automation_Test_Automation_Test_Suites">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-APP_Automation_Test_Automation_Test_Suites">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-APP_Automation_Test_Automation_Test_Suites">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-APP_Automation_Test_Automation_Test_Suites">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-APP_Automation_Test_Automation_Test_Suites">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-APP_Automation_Test_Automation_Test_Suites">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" class="hide-methods failed suite-APP_Automation_Test_Automation_Test_Suites"> (hide)</a> <!-- hide-methods failed suite-APP_Automation_Test_Automation_Test_Suites -->
+                      <a href="#" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" class="show-methods failed suite-APP_Automation_Test_Automation_Test_Suites"> (show)</a> <!-- show-methods failed suite-APP_Automation_Test_Automation_Test_Suites -->
+                    </span>
+                    <div class="method-list-content failed suite-APP_Automation_Test_Automation_Test_Suites">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.RegisterationPageTest" hash-for-method="validateregisterationPageTitle">validateregisterationPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-APP_Automation_Test_Automation_Test_Suites -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" class="hide-methods passed suite-APP_Automation_Test_Automation_Test_Suites"> (hide)</a> <!-- hide-methods passed suite-APP_Automation_Test_Automation_Test_Suites -->
+                      <a href="#" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" class="show-methods passed suite-APP_Automation_Test_Automation_Test_Suites"> (show)</a> <!-- show-methods passed suite-APP_Automation_Test_Automation_Test_Suites -->
+                    </span>
+                    <div class="method-list-content passed suite-APP_Automation_Test_Automation_Test_Suites">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.ForgotPageTest" hash-for-method="forgot(qwer, yahoo@gmail.com, 98765, 98765)">forgot(qwer, yahoo@gmail.com, 98765, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.ForgotPageTest" hash-for-method="forgot(ppwe1, rttr@.c, 98765, 98765)">forgot(ppwe1, rttr@.c, 98765, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.ForgotPageTest" hash-for-method="forgot(ppwe, gmail@g.c, 98765, 98765)">forgot(ppwe, gmail@g.c, 98765, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.ForgotPageTest" hash-for-method="forgotPageTitleTest">forgotPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.LoginPageTest" hash-for-method="loginTest(, )">loginTest(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.LoginPageTest" hash-for-method="loginTest(ppwe, 98765)">loginTest(ppwe, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.LoginPageTest" hash-for-method="loginTest(ppwe1, 98765)">loginTest(ppwe1, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.LoginPageTest" hash-for-method="loginTest(qwer, 98765)">loginTest(qwer, 98765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.RegisterationPageTest" hash-for-method="registeration(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c)">registeration(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.RegisterationPageTest" hash-for-method="registeration(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c)">registeration(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-APP_Automation_Test_Automation_Test_Suites" title="com.qa.Bridgelabz.testcases.RegisterationPageTest" hash-for-method="registeration(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com)">registeration(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-APP_Automation_Test_Automation_Test_Suites -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-APP_Automation_Test_Automation_Test_Suites" class="panel APP_Automation_Test_Automation_Test_Suites">
+          <div class="suite-APP_Automation_Test_Automation_Test_Suites-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.Bridgelabz.testcases.RegisterationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateregisterationPageTitle">
+                  </a> <!-- validateregisterationPageTitle -->
+                  <span class="method-name">validateregisterationPageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [registerationPage] but found [loginPage]
+	at com.qa.Bridgelabz.testcases.RegisterationPageTest.validateregisterationPageTitle(RegisterationPageTest.java:30)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APP_Automation_Test_Automation_Test_Suites-class-failed -->
+          <div class="suite-APP_Automation_Test_Automation_Test_Suites-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.Bridgelabz.testcases.ForgotPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgot(qwer, yahoo@gmail.com, 98765, 98765)">
+                  </a> <!-- forgot(qwer, yahoo@gmail.com, 98765, 98765) -->
+                  <span class="method-name">forgot</span>
+                  <span class="parameters">(qwer, yahoo@gmail.com, 98765, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgot(ppwe1, rttr@.c, 98765, 98765)">
+                  </a> <!-- forgot(ppwe1, rttr@.c, 98765, 98765) -->
+                  <span class="method-name">forgot</span>
+                  <span class="parameters">(ppwe1, rttr@.c, 98765, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgot(ppwe, gmail@g.c, 98765, 98765)">
+                  </a> <!-- forgot(ppwe, gmail@g.c, 98765, 98765) -->
+                  <span class="method-name">forgot</span>
+                  <span class="parameters">(ppwe, gmail@g.c, 98765, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotPageTitleTest">
+                  </a> <!-- forgotPageTitleTest -->
+                  <span class="method-name">forgotPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APP_Automation_Test_Automation_Test_Suites-class-passed -->
+          <div class="suite-APP_Automation_Test_Automation_Test_Suites-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.Bridgelabz.testcases.RegisterationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registeration(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c)">
+                  </a> <!-- registeration(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c) -->
+                  <span class="method-name">registeration</span>
+                  <span class="parameters">(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registeration(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c)">
+                  </a> <!-- registeration(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c) -->
+                  <span class="method-name">registeration</span>
+                  <span class="parameters">(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registeration(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com)">
+                  </a> <!-- registeration(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com) -->
+                  <span class="method-name">registeration</span>
+                  <span class="parameters">(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APP_Automation_Test_Automation_Test_Suites-class-passed -->
+          <div class="suite-APP_Automation_Test_Automation_Test_Suites-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.Bridgelabz.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(, )">
+                  </a> <!-- loginTest(, ) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(ppwe, 98765)">
+                  </a> <!-- loginTest(ppwe, 98765) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(ppwe, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(ppwe1, 98765)">
+                  </a> <!-- loginTest(ppwe1, 98765) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(ppwe1, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(qwer, 98765)">
+                  </a> <!-- loginTest(qwer, 98765) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(qwer, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APP_Automation_Test_Automation_Test_Suites-class-passed -->
+        </div> <!-- panel APP_Automation_Test_Automation_Test_Suites -->
+        <div panel-name="test-xml-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/user/home/Prem/AppAutomation/src/main/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;APP Automation Test Automation Test Suites&quot;&gt;
+  &lt;test name=&quot; App Test Cases &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.Bridgelabz.testcases.RegisterationPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.Bridgelabz.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.Bridgelabz.testcases.ForgotPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  App Test Cases  --&gt;
+&lt;/suite&gt; &lt;!-- APP Automation Test Automation Test Suites --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for APP Automation Test Automation Test Suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name"> App Test Cases  (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for APP Automation Test Automation Test Suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for APP Automation Test Automation Test Suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_APP_Automation_Test_Automation_Test_Suites');
+function tableData_APP_Automation_Test_Automation_Test_Suites() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'registeration')
+data.setCell(0, 2, 'com.qa.Bridgelabz.testcases.RegisterationPageTest')
+data.setCell(0, 3, 13730);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'registeration')
+data.setCell(1, 2, 'com.qa.Bridgelabz.testcases.RegisterationPageTest')
+data.setCell(1, 3, 13602);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'registeration')
+data.setCell(2, 2, 'com.qa.Bridgelabz.testcases.RegisterationPageTest')
+data.setCell(2, 3, 13491);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'forgot')
+data.setCell(3, 2, 'com.qa.Bridgelabz.testcases.ForgotPageTest')
+data.setCell(3, 3, 13206);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'forgot')
+data.setCell(4, 2, 'com.qa.Bridgelabz.testcases.ForgotPageTest')
+data.setCell(4, 3, 13189);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgot')
+data.setCell(5, 2, 'com.qa.Bridgelabz.testcases.ForgotPageTest')
+data.setCell(5, 3, 13030);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'com.qa.Bridgelabz.testcases.LoginPageTest')
+data.setCell(6, 3, 613);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTest')
+data.setCell(7, 2, 'com.qa.Bridgelabz.testcases.LoginPageTest')
+data.setCell(7, 3, 585);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginTest')
+data.setCell(8, 2, 'com.qa.Bridgelabz.testcases.LoginPageTest')
+data.setCell(8, 3, 583);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginTest')
+data.setCell(9, 2, 'com.qa.Bridgelabz.testcases.LoginPageTest')
+data.setCell(9, 3, 561);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateregisterationPageTitle')
+data.setCell(10, 2, 'com.qa.Bridgelabz.testcases.RegisterationPageTest')
+data.setCell(10, 3, 53);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginPageTitleTest')
+data.setCell(11, 2, 'com.qa.Bridgelabz.testcases.LoginPageTest')
+data.setCell(11, 3, 51);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'forgotPageTitleTest')
+data.setCell(12, 2, 'com.qa.Bridgelabz.testcases.ForgotPageTest')
+data.setCell(12, 3, 31);
+window.suiteTableData['APP_Automation_Test_Automation_Test_Suites']= { tableData: data, tableDiv: 'times-div-APP_Automation_Test_Automation_Test_Suites'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-APP_Automation_Test_Automation_Test_Suites">
+              </div> <!-- times-div-APP_Automation_Test_Automation_Test_Suites -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for APP Automation Test Automation Test Suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-APP_Automation_Test_Automation_Test_Suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.RegisterationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateregisterationPageTitle</span>
+                <span class="method-start">3289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3350 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">5680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5733 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.ForgotPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPageTitleTest</span>
+                <span class="method-start">7847 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7880 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.RegisterationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registeration(premsai, qwer, 1234, drfcvgb, 789766, yahoo@gmail.com)</span>
+                <span class="method-start">10752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registeration(pppp, ppwe, 1235, fdgsb, 78562, gmail@g.c)</span>
+                <span class="method-start">26254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registeration(pppp1, ppwe1, 1236, fdgsb, 5476, rttr@.c)</span>
+                <span class="method-start">41661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55266 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">55511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(qwer, 98765)</span>
+                <span class="method-start">57162 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">57779 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57867 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(ppwe, 98765)</span>
+                <span class="method-start">59425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">60141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(ppwe1, 98765)</span>
+                <span class="method-start">61638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">62367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(, )</span>
+                <span class="method-start">63856 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64418 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.Bridgelabz.testcases.ForgotPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgot(qwer, yahoo@gmail.com, 98765, 98765)</span>
+                <span class="method-start">66222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79255 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgot(ppwe, gmail@g.c, 98765, 98765)</span>
+                <span class="method-start">81119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">94327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">94529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgot(ppwe1, rttr@.c, 98765, 98765)</span>
+                <span class="method-start">96063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109255 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
